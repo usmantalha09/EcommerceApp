@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <ImageView
+        android:alpha=".7"
+        android:scaleType="centerCrop"
+        android:src="@drawable/splashbg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:layout_centerInParent="true"
+        android:id="@+id/splashlogo"
+        android:layout_above="@id/becrux"
+        android:src="@drawable/splashlogo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginBottom="30dp"/>
+
+    <ImageView
+        android:id="@+id/becrux"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_above="@id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:src="@drawable/becrux" />
+
+    <ProgressBar
+        android:layout_above="@id/powered_by"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/progressBar"
+        android:indeterminateTint="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/powered_by"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/powered_by_themes_coder" />
+</RelativeLayout>
